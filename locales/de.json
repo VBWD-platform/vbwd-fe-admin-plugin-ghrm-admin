@@ -1,0 +1,91 @@
+{
+  "ghrm": {
+    "nav": {
+      "software": "Software",
+      "widgets": "Widgets"
+    },
+    "softwareTab": {
+      "loading": "Softwarepaketdaten werden geladen...",
+      "labelPackageName": "Paket-Anzeigename *",
+      "placeholderPackageName": "z.B. Mein Analysetool",
+      "labelGithubOwner": "GitHub Owner *",
+      "placeholderGithubOwner": "z.B. myorg",
+      "labelGithubRepo": "GitHub Repo *",
+      "placeholderGithubRepo": "z.B. my-plugin",
+      "labelDescription": "Beschreibung",
+      "placeholderDescription": "Kurze Beschreibung des Softwarepakets",
+      "labelAuthor": "Autor / Betreuer",
+      "placeholderAuthor": "Autor- oder Organisationsname",
+      "labelIconUrl": "Software-Symbol URL",
+      "placeholderIconUrl": "/uploads/icon.png oder https://...",
+      "iconAlt": "Software-Symbol Vorschau",
+      "saving": "Speichern...",
+      "updatePackage": "Softwarepaket aktualisieren",
+      "createPackage": "Softwarepaket erstellen",
+      "labelSyncApiKey": "Sync API Key",
+      "syncApiKeyHint": "Diesen als GitHub Actions Secret namens {secretName} in Ihrem Repo hinzufuegen. Die Action sollte aufrufen:",
+      "copied": "Kopiert!",
+      "copy": "Kopieren",
+      "rotating": "Wird rotiert...",
+      "regenerate": "Neu generieren",
+      "labelLastSynced": "Zuletzt synchronisiert",
+      "never": "Nie",
+      "syncing": "Synchronisiere...",
+      "syncNow": "Jetzt synchronisieren",
+      "fetching": "Abrufen...",
+      "syncField": "{field} synchronisieren",
+      "syncSuccess": "Synchronisierung erfolgreich abgeschlossen.",
+      "previewLabel": "Vorschau: {field}",
+      "noContent": "Kein Inhalt verfuegbar.",
+      "screenshotAlt": "Screenshot-Vorschau",
+      "noScreenshots": "Keine Screenshots gefunden.",
+      "applying": "Wird angewendet...",
+      "apply": "Anwenden",
+      "dismiss": "Verwerfen",
+      "appliedSuccess": "Erfolgreich angewendet.",
+      "fieldLabel": {
+        "readme": "README",
+        "changelog": "Changelog",
+        "screenshots": "Screenshots"
+      }
+    },
+    "breadcrumbPreview": {
+      "cataloguePage": "Katalogseite:",
+      "detailPage": "Detailseite:",
+      "defaultRoot": "Startseite",
+      "sampleCategory": "Backend",
+      "samplePackage": "LoopAI Core"
+    },
+    "breadcrumbConfig": {
+      "labelSeparator": "Trennzeichen",
+      "hintSeparator": "Symbol zwischen Breadcrumb-Elementen (z.B. {slash}, {gt}, {rsaquo})",
+      "labelRootLabel": "Stammbezeichnung",
+      "hintRootLabel": "Bezeichnung fuer den ersten Breadcrumb (verlinkt zum Stamm-Slug)",
+      "labelRootUrl": "Stamm URL",
+      "labelShowCategory": "Kategorie-Breadcrumb anzeigen",
+      "hintShowCategory": "Zeigt die Kategorie zwischen Stamm und Paketname an",
+      "labelMaxLabelLength": "Maximale Bezeichnungslaenge",
+      "hintMaxLabelLength": "Zeichen vor dem Abschneiden mit \"...\"",
+      "labelCustomCss": "Benutzerdefiniertes CSS",
+      "hintCustomCss": "Wird auf den Breadcrumb-Wrapper angewendet. Ueberschreibt Standardstile.",
+      "hintPreview": "Vorschau verwendet aktuelle (nicht gespeicherte) Einstellungen.",
+      "tabGeneral": "Allgemein",
+      "tabCss": "CSS",
+      "tabPreview": "Vorschau",
+      "reset": "Zuruecksetzen",
+      "saving": "Speichern...",
+      "save": "Speichern",
+      "saved": "Gespeichert.",
+      "saveFailed": "Speichern fehlgeschlagen"
+    },
+    "widgets": {
+      "title": "GHRM — Breadcrumb Widgets",
+      "loading": "Widget-Konfigurationen werden geladen...",
+      "loadFailed": "Widget-Konfigurationen konnten nicht geladen werden",
+      "catalogueLabel": "Katalog-Breadcrumb",
+      "catalogueDesc": "Wird oben auf Kategorielisten- und Kategorieindexseiten angezeigt.",
+      "detailLabel": "Paketdetail-Breadcrumb",
+      "detailDesc": "Wird oben auf der Softwarepaket-Detailseite angezeigt."
+    }
+  }
+}

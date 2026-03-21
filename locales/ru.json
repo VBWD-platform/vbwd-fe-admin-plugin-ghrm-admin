@@ -1,0 +1,91 @@
+{
+  "ghrm": {
+    "nav": {
+      "software": "Software",
+      "widgets": "Widgets"
+    },
+    "softwareTab": {
+      "loading": "Загрузка данных программного пакета...",
+      "labelPackageName": "Отображаемое имя пакета *",
+      "placeholderPackageName": "напр. Мой инструмент аналитики",
+      "labelGithubOwner": "GitHub Owner *",
+      "placeholderGithubOwner": "напр. myorg",
+      "labelGithubRepo": "GitHub Repo *",
+      "placeholderGithubRepo": "напр. my-plugin",
+      "labelDescription": "Описание",
+      "placeholderDescription": "Краткое описание программного пакета",
+      "labelAuthor": "Автор / Мейнтейнер",
+      "placeholderAuthor": "Имя автора или организации",
+      "labelIconUrl": "URL иконки программы",
+      "placeholderIconUrl": "/uploads/icon.png или https://...",
+      "iconAlt": "Предпросмотр иконки программы",
+      "saving": "Сохранение...",
+      "updatePackage": "Обновить программный пакет",
+      "createPackage": "Создать программный пакет",
+      "labelSyncApiKey": "Sync API Key",
+      "syncApiKeyHint": "Добавьте это как секрет GitHub Actions с именем {secretName} в вашем репозитории. Action должен вызывать:",
+      "copied": "Скопировано!",
+      "copy": "Копировать",
+      "rotating": "Ротация...",
+      "regenerate": "Перегенерировать",
+      "labelLastSynced": "Последняя синхронизация",
+      "never": "Никогда",
+      "syncing": "Синхронизация...",
+      "syncNow": "Синхронизировать сейчас",
+      "fetching": "Получение...",
+      "syncField": "Синхронизировать {field}",
+      "syncSuccess": "Синхронизация успешно завершена.",
+      "previewLabel": "Предпросмотр: {field}",
+      "noContent": "Содержимое недоступно.",
+      "screenshotAlt": "Предпросмотр скриншота",
+      "noScreenshots": "Скриншоты не найдены.",
+      "applying": "Применение...",
+      "apply": "Применить",
+      "dismiss": "Отклонить",
+      "appliedSuccess": "Успешно применено.",
+      "fieldLabel": {
+        "readme": "README",
+        "changelog": "Changelog",
+        "screenshots": "Скриншоты"
+      }
+    },
+    "breadcrumbPreview": {
+      "cataloguePage": "Страница каталога:",
+      "detailPage": "Страница деталей:",
+      "defaultRoot": "Главная",
+      "sampleCategory": "Backend",
+      "samplePackage": "LoopAI Core"
+    },
+    "breadcrumbConfig": {
+      "labelSeparator": "Разделитель",
+      "hintSeparator": "Символ между элементами хлебных крошек (напр. {slash}, {gt}, {rsaquo})",
+      "labelRootLabel": "Метка корня",
+      "hintRootLabel": "Метка для первой крошки (ссылка на корневой slug)",
+      "labelRootUrl": "URL корня",
+      "labelShowCategory": "Показывать крошку категории",
+      "hintShowCategory": "Отображает категорию между корнем и именем пакета",
+      "labelMaxLabelLength": "Максимальная длина метки",
+      "hintMaxLabelLength": "Символов до обрезки с \"...\"",
+      "labelCustomCss": "Пользовательский CSS",
+      "hintCustomCss": "Применяется к обертке хлебных крошек. Переопределяет стили по умолчанию.",
+      "hintPreview": "Предпросмотр использует текущие (несохраненные) настройки.",
+      "tabGeneral": "Общие",
+      "tabCss": "CSS",
+      "tabPreview": "Предпросмотр",
+      "reset": "Сбросить",
+      "saving": "Сохранение...",
+      "save": "Сохранить",
+      "saved": "Сохранено.",
+      "saveFailed": "Ошибка сохранения"
+    },
+    "widgets": {
+      "title": "GHRM — Breadcrumb Widgets",
+      "loading": "Загрузка конфигураций виджетов...",
+      "loadFailed": "Не удалось загрузить конфигурации виджетов",
+      "catalogueLabel": "Breadcrumb каталога",
+      "catalogueDesc": "Отображается вверху страниц списка категорий и индекса.",
+      "detailLabel": "Breadcrumb деталей пакета",
+      "detailDesc": "Отображается вверху страницы деталей программного пакета."
+    }
+  }
+}

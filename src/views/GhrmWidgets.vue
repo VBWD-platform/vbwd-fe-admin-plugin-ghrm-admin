@@ -1,14 +1,14 @@
 <template>
   <div class="ghrm-widgets">
     <h1 class="ghrm-widgets__title">
-      GHRM — Breadcrumb Widgets
+      {{ $t('ghrm.widgets.title') }}
     </h1>
 
     <div
       v-if="loading"
       class="ghrm-widgets__loading"
     >
-      Loading widget configs…
+      {{ $t('ghrm.widgets.loading') }}
     </div>
 
     <div
@@ -28,10 +28,10 @@
       >
         <div class="ghrm-widgets__card-header">
           <h2 class="ghrm-widgets__card-title">
-            {{ widgetLabel(widget.id) }}
+            {{ $t('ghrm.widgets.' + widget.id + 'Label') }}
           </h2>
           <p class="ghrm-widgets__card-desc">
-            {{ widgetDesc(widget.id) }}
+            {{ $t('ghrm.widgets.' + widget.id + 'Desc') }}
           </p>
         </div>
 
@@ -53,25 +53,6 @@ import GhrmBreadcrumbWidgetConfig from '../components/GhrmBreadcrumbWidgetConfig
 const loading = ref(true);
 const loadError = ref('');
 const widgets = ref<GhrmBreadcrumbConfig[]>([]);
-
-const WIDGET_META: Record<string, { label: string; desc: string }> = {
-  catalogue: {
-    label: 'Catalogue Breadcrumb',
-    desc: 'Shown at the top of category list and category index pages.',
-  },
-  detail: {
-    label: 'Package Detail Breadcrumb',
-    desc: 'Shown at the top of the software package detail page.',
-  },
-};
-
-function widgetLabel(id: string): string {
-  return WIDGET_META[id]?.label ?? id;
-}
-
-function widgetDesc(id: string): string {
-  return WIDGET_META[id]?.desc ?? '';
-}
 
 function onSaved(id: string, updated: GhrmBreadcrumbConfig) {
   const idx = widgets.value.findIndex((w) => w.id === id);

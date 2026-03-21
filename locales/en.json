@@ -1,0 +1,91 @@
+{
+  "ghrm": {
+    "nav": {
+      "software": "Software",
+      "widgets": "Widgets"
+    },
+    "softwareTab": {
+      "loading": "Loading software package data...",
+      "labelPackageName": "Package Display Name *",
+      "placeholderPackageName": "e.g. My Analytics Tool",
+      "labelGithubOwner": "GitHub Owner *",
+      "placeholderGithubOwner": "e.g. myorg",
+      "labelGithubRepo": "GitHub Repo *",
+      "placeholderGithubRepo": "e.g. my-plugin",
+      "labelDescription": "Description",
+      "placeholderDescription": "Short description of the software package",
+      "labelAuthor": "Author / Maintainer",
+      "placeholderAuthor": "Author or organisation name",
+      "labelIconUrl": "Software Icon URL",
+      "placeholderIconUrl": "/uploads/icon.png or https://...",
+      "iconAlt": "Software icon preview",
+      "saving": "Saving...",
+      "updatePackage": "Update Software Package",
+      "createPackage": "Create Software Package",
+      "labelSyncApiKey": "Sync API Key",
+      "syncApiKeyHint": "Add this as a GitHub Actions secret named {secretName} in your repo. The action should call:",
+      "copied": "Copied!",
+      "copy": "Copy",
+      "rotating": "Rotating...",
+      "regenerate": "Regenerate",
+      "labelLastSynced": "Last Synced",
+      "never": "Never",
+      "syncing": "Syncing...",
+      "syncNow": "Sync Now",
+      "fetching": "Fetching...",
+      "syncField": "Sync {field}",
+      "syncSuccess": "Sync completed successfully.",
+      "previewLabel": "Preview: {field}",
+      "noContent": "No content available.",
+      "screenshotAlt": "Screenshot preview",
+      "noScreenshots": "No screenshots found.",
+      "applying": "Applying...",
+      "apply": "Apply",
+      "dismiss": "Dismiss",
+      "appliedSuccess": "Applied successfully.",
+      "fieldLabel": {
+        "readme": "README",
+        "changelog": "Changelog",
+        "screenshots": "Screenshots"
+      }
+    },
+    "breadcrumbPreview": {
+      "cataloguePage": "Catalogue page:",
+      "detailPage": "Detail page:",
+      "defaultRoot": "Home",
+      "sampleCategory": "Backend",
+      "samplePackage": "LoopAI Core"
+    },
+    "breadcrumbConfig": {
+      "labelSeparator": "Separator",
+      "hintSeparator": "Symbol shown between breadcrumb items (e.g. {slash}, {gt}, {rsaquo})",
+      "labelRootLabel": "Root label",
+      "hintRootLabel": "Label for the first crumb (links to root slug)",
+      "labelRootUrl": "Root URL",
+      "labelShowCategory": "Show category crumb",
+      "hintShowCategory": "Displays the category between root and package name",
+      "labelMaxLabelLength": "Max label length",
+      "hintMaxLabelLength": "Characters before truncation with \"...\"",
+      "labelCustomCss": "Custom CSS",
+      "hintCustomCss": "Applied scoped to the breadcrumb wrapper. Overrides default styles.",
+      "hintPreview": "Preview uses current (unsaved) settings.",
+      "tabGeneral": "General",
+      "tabCss": "CSS",
+      "tabPreview": "Preview",
+      "reset": "Reset",
+      "saving": "Saving...",
+      "save": "Save",
+      "saved": "Saved.",
+      "saveFailed": "Save failed"
+    },
+    "widgets": {
+      "title": "GHRM — Breadcrumb Widgets",
+      "loading": "Loading widget configs...",
+      "loadFailed": "Failed to load widget configs",
+      "catalogueLabel": "Catalogue Breadcrumb",
+      "catalogueDesc": "Shown at the top of category list and category index pages.",
+      "detailLabel": "Package Detail Breadcrumb",
+      "detailDesc": "Shown at the top of the software package detail page."
+    }
+  }
+}

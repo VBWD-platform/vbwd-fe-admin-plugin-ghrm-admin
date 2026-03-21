@@ -1,0 +1,91 @@
+{
+  "ghrm": {
+    "nav": {
+      "software": "Software",
+      "widgets": "Widgets"
+    },
+    "softwareTab": {
+      "loading": "ソフトウェアパッケージデータを読み込み中...",
+      "labelPackageName": "パッケージ表示名 *",
+      "placeholderPackageName": "例: My Analytics Tool",
+      "labelGithubOwner": "GitHub Owner *",
+      "placeholderGithubOwner": "例: myorg",
+      "labelGithubRepo": "GitHub Repo *",
+      "placeholderGithubRepo": "例: my-plugin",
+      "labelDescription": "説明",
+      "placeholderDescription": "ソフトウェアパッケージの簡単な説明",
+      "labelAuthor": "著者 / メンテナー",
+      "placeholderAuthor": "著者または組織名",
+      "labelIconUrl": "ソフトウェアアイコン URL",
+      "placeholderIconUrl": "/uploads/icon.png または https://...",
+      "iconAlt": "ソフトウェアアイコンプレビュー",
+      "saving": "保存中...",
+      "updatePackage": "ソフトウェアパッケージを更新",
+      "createPackage": "ソフトウェアパッケージを作成",
+      "labelSyncApiKey": "Sync API Key",
+      "syncApiKeyHint": "リポジトリのGitHub Actionsシークレットに{secretName}として追加してください。アクションは以下を呼び出す必要があります:",
+      "copied": "コピーしました！",
+      "copy": "コピー",
+      "rotating": "ローテーション中...",
+      "regenerate": "再生成",
+      "labelLastSynced": "最終同期",
+      "never": "なし",
+      "syncing": "同期中...",
+      "syncNow": "今すぐ同期",
+      "fetching": "取得中...",
+      "syncField": "{field}を同期",
+      "syncSuccess": "同期が正常に完了しました。",
+      "previewLabel": "プレビュー: {field}",
+      "noContent": "コンテンツがありません。",
+      "screenshotAlt": "スクリーンショットプレビュー",
+      "noScreenshots": "スクリーンショットが見つかりません。",
+      "applying": "適用中...",
+      "apply": "適用",
+      "dismiss": "閉じる",
+      "appliedSuccess": "正常に適用されました。",
+      "fieldLabel": {
+        "readme": "README",
+        "changelog": "Changelog",
+        "screenshots": "スクリーンショット"
+      }
+    },
+    "breadcrumbPreview": {
+      "cataloguePage": "カタログページ:",
+      "detailPage": "詳細ページ:",
+      "defaultRoot": "ホーム",
+      "sampleCategory": "Backend",
+      "samplePackage": "LoopAI Core"
+    },
+    "breadcrumbConfig": {
+      "labelSeparator": "区切り記号",
+      "hintSeparator": "パンくずリスト項目間に表示される記号（例: {slash}、{gt}、{rsaquo}）",
+      "labelRootLabel": "ルートラベル",
+      "hintRootLabel": "最初のパンくずのラベル（ルートスラグにリンク）",
+      "labelRootUrl": "ルート URL",
+      "labelShowCategory": "カテゴリパンくずを表示",
+      "hintShowCategory": "ルートとパッケージ名の間にカテゴリを表示します",
+      "labelMaxLabelLength": "最大ラベル長",
+      "hintMaxLabelLength": "「...」で切り詰める前の文字数",
+      "labelCustomCss": "カスタム CSS",
+      "hintCustomCss": "パンくずリストラッパーにスコープ適用されます。デフォルトスタイルを上書きします。",
+      "hintPreview": "プレビューは現在の（未保存の）設定を使用します。",
+      "tabGeneral": "一般",
+      "tabCss": "CSS",
+      "tabPreview": "プレビュー",
+      "reset": "リセット",
+      "saving": "保存中...",
+      "save": "保存",
+      "saved": "保存しました。",
+      "saveFailed": "保存に失敗しました"
+    },
+    "widgets": {
+      "title": "GHRM — Breadcrumb Widgets",
+      "loading": "ウィジェット設定を読み込み中...",
+      "loadFailed": "ウィジェット設定の読み込みに失敗しました",
+      "catalogueLabel": "カタログ Breadcrumb",
+      "catalogueDesc": "カテゴリ一覧およびカテゴリインデックスページの上部に表示されます。",
+      "detailLabel": "パッケージ詳細 Breadcrumb",
+      "detailDesc": "ソフトウェアパッケージ詳細ページの上部に表示されます。"
+    }
+  }
+}

@@ -9,7 +9,7 @@
         :class="{ 'ghrm-widget-config__tab--active': activeTab === tab.id }"
         @click="activeTab = tab.id"
       >
-        {{ tab.label }}
+        {{ $t('ghrm.breadcrumbConfig.tab' + tab.id.charAt(0).toUpperCase() + tab.id.slice(1)) }}
       </button>
     </div>
 
@@ -19,7 +19,7 @@
       class="ghrm-widget-config__panel"
     >
       <div class="ghrm-field">
-        <label class="ghrm-label">Separator</label>
+        <label class="ghrm-label">{{ $t('ghrm.breadcrumbConfig.labelSeparator') }}</label>
         <input
           v-model="draft.separator"
           class="ghrm-input ghrm-input--short"
@@ -28,12 +28,12 @@
           data-testid="separator-input"
         >
         <p class="ghrm-hint">
-          Symbol shown between breadcrumb items (e.g. <code>/</code>, <code>&gt;</code>, <code>›</code>)
+          {{ $t('ghrm.breadcrumbConfig.hintSeparator', { slash: '/', gt: '>', rsaquo: '\u203A' }) }}
         </p>
       </div>
 
       <div class="ghrm-field">
-        <label class="ghrm-label">Root label</label>
+        <label class="ghrm-label">{{ $t('ghrm.breadcrumbConfig.labelRootLabel') }}</label>
         <input
           v-model="draft.root_name"
           class="ghrm-input"
@@ -41,12 +41,12 @@
           data-testid="root-name-input"
         >
         <p class="ghrm-hint">
-          Label for the first crumb (links to root slug)
+          {{ $t('ghrm.breadcrumbConfig.hintRootLabel') }}
         </p>
       </div>
 
       <div class="ghrm-field">
-        <label class="ghrm-label">Root URL</label>
+        <label class="ghrm-label">{{ $t('ghrm.breadcrumbConfig.labelRootUrl') }}</label>
         <input
           v-model="draft.root_slug"
           class="ghrm-input"
@@ -62,15 +62,15 @@
             type="checkbox"
             data-testid="show-category-checkbox"
           >
-          Show category crumb
+          {{ $t('ghrm.breadcrumbConfig.labelShowCategory') }}
         </label>
         <p class="ghrm-hint">
-          Displays the category between root and package name
+          {{ $t('ghrm.breadcrumbConfig.hintShowCategory') }}
         </p>
       </div>
 
       <div class="ghrm-field">
-        <label class="ghrm-label">Max label length</label>
+        <label class="ghrm-label">{{ $t('ghrm.breadcrumbConfig.labelMaxLabelLength') }}</label>
         <input
           v-model.number="draft.max_label_length"
           class="ghrm-input ghrm-input--short"
@@ -80,7 +80,7 @@
           data-testid="max-label-input"
         >
         <p class="ghrm-hint">
-          Characters before truncation with "…"
+          {{ $t('ghrm.breadcrumbConfig.hintMaxLabelLength') }}
         </p>
       </div>
     </div>
@@ -91,7 +91,7 @@
       class="ghrm-widget-config__panel"
     >
       <div class="ghrm-field">
-        <label class="ghrm-label">Custom CSS</label>
+        <label class="ghrm-label">{{ $t('ghrm.breadcrumbConfig.labelCustomCss') }}</label>
         <textarea
           v-model="draft.css"
           class="ghrm-textarea"
@@ -100,7 +100,7 @@
           data-testid="css-textarea"
         />
         <p class="ghrm-hint">
-          Applied scoped to the breadcrumb wrapper. Overrides default styles.
+          {{ $t('ghrm.breadcrumbConfig.hintCustomCss') }}
         </p>
       </div>
     </div>
@@ -111,7 +111,7 @@
       class="ghrm-widget-config__panel ghrm-widget-config__panel--preview"
     >
       <p class="ghrm-hint ghrm-hint--preview">
-        Preview uses current (unsaved) settings.
+        {{ $t('ghrm.breadcrumbConfig.hintPreview') }}
       </p>
       <div class="ghrm-preview-frame">
         <GhrmBreadcrumbPreview
@@ -129,7 +129,7 @@
         data-testid="reset-btn"
         @click="reset"
       >
-        Reset
+        {{ $t('ghrm.breadcrumbConfig.reset') }}
       </button>
       <button
         class="ghrm-btn ghrm-btn--primary"
@@ -137,7 +137,7 @@
         data-testid="save-btn"
         @click="save"
       >
-        {{ saving ? 'Saving…' : 'Save' }}
+        {{ saving ? $t('ghrm.breadcrumbConfig.saving') : $t('ghrm.breadcrumbConfig.save') }}
       </button>
     </div>
 
@@ -153,7 +153,7 @@
       class="ghrm-success"
       data-testid="save-ok"
     >
-      Saved.
+      {{ $t('ghrm.breadcrumbConfig.saved') }}
     </p>
   </div>
 </template>

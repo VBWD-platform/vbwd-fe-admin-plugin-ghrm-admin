@@ -1,0 +1,91 @@
+{
+  "ghrm": {
+    "nav": {
+      "software": "Software",
+      "widgets": "Widgets"
+    },
+    "softwareTab": {
+      "loading": "正在加载软件包数据...",
+      "labelPackageName": "包显示名称 *",
+      "placeholderPackageName": "例如 My Analytics Tool",
+      "labelGithubOwner": "GitHub Owner *",
+      "placeholderGithubOwner": "例如 myorg",
+      "labelGithubRepo": "GitHub Repo *",
+      "placeholderGithubRepo": "例如 my-plugin",
+      "labelDescription": "描述",
+      "placeholderDescription": "软件包的简短描述",
+      "labelAuthor": "作者 / 维护者",
+      "placeholderAuthor": "作者或组织名称",
+      "labelIconUrl": "软件图标 URL",
+      "placeholderIconUrl": "/uploads/icon.png 或 https://...",
+      "iconAlt": "软件图标预览",
+      "saving": "保存中...",
+      "updatePackage": "更新软件包",
+      "createPackage": "创建软件包",
+      "labelSyncApiKey": "Sync API Key",
+      "syncApiKeyHint": "将此添加为仓库中名为 {secretName} 的 GitHub Actions secret。Action 应调用：",
+      "copied": "已复制！",
+      "copy": "复制",
+      "rotating": "轮换中...",
+      "regenerate": "重新生成",
+      "labelLastSynced": "上次同步",
+      "never": "从未",
+      "syncing": "同步中...",
+      "syncNow": "立即同步",
+      "fetching": "获取中...",
+      "syncField": "同步 {field}",
+      "syncSuccess": "同步成功完成。",
+      "previewLabel": "预览：{field}",
+      "noContent": "没有可用内容。",
+      "screenshotAlt": "截图预览",
+      "noScreenshots": "未找到截图。",
+      "applying": "应用中...",
+      "apply": "应用",
+      "dismiss": "关闭",
+      "appliedSuccess": "应用成功。",
+      "fieldLabel": {
+        "readme": "README",
+        "changelog": "Changelog",
+        "screenshots": "截图"
+      }
+    },
+    "breadcrumbPreview": {
+      "cataloguePage": "目录页：",
+      "detailPage": "详情页：",
+      "defaultRoot": "首页",
+      "sampleCategory": "Backend",
+      "samplePackage": "LoopAI Core"
+    },
+    "breadcrumbConfig": {
+      "labelSeparator": "分隔符",
+      "hintSeparator": "面包屑项目之间显示的符号（例如 {slash}、{gt}、{rsaquo}）",
+      "labelRootLabel": "根标签",
+      "hintRootLabel": "第一个面包屑的标签（链接到根 slug）",
+      "labelRootUrl": "根 URL",
+      "labelShowCategory": "显示分类面包屑",
+      "hintShowCategory": "在根和包名之间显示分类",
+      "labelMaxLabelLength": "最大标签长度",
+      "hintMaxLabelLength": "使用\"...\"截断前的字符数",
+      "labelCustomCss": "自定义 CSS",
+      "hintCustomCss": "应用于面包屑包装器。覆盖默认样式。",
+      "hintPreview": "预览使用当前（未保存的）设置。",
+      "tabGeneral": "常规",
+      "tabCss": "CSS",
+      "tabPreview": "预览",
+      "reset": "重置",
+      "saving": "保存中...",
+      "save": "保存",
+      "saved": "已保存。",
+      "saveFailed": "保存失败"
+    },
+    "widgets": {
+      "title": "GHRM — Breadcrumb Widgets",
+      "loading": "正在加载小组件配置...",
+      "loadFailed": "无法加载小组件配置",
+      "catalogueLabel": "目录面包屑",
+      "catalogueDesc": "显示在分类列表和分类索引页面的顶部。",
+      "detailLabel": "包详情面包屑",
+      "detailDesc": "显示在软件包详情页面的顶部。"
+    }
+  }
+}

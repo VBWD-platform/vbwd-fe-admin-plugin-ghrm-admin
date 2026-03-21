@@ -1,0 +1,91 @@
+{
+  "ghrm": {
+    "nav": {
+      "software": "Logiciel",
+      "widgets": "Widgets"
+    },
+    "softwareTab": {
+      "loading": "Chargement des donnees du paquet logiciel...",
+      "labelPackageName": "Nom d'affichage du paquet *",
+      "placeholderPackageName": "ex. Mon outil d'analyse",
+      "labelGithubOwner": "GitHub Owner *",
+      "placeholderGithubOwner": "ex. myorg",
+      "labelGithubRepo": "GitHub Repo *",
+      "placeholderGithubRepo": "ex. my-plugin",
+      "labelDescription": "Description",
+      "placeholderDescription": "Breve description du paquet logiciel",
+      "labelAuthor": "Auteur / Responsable",
+      "placeholderAuthor": "Nom de l'auteur ou de l'organisation",
+      "labelIconUrl": "URL de l'icone du logiciel",
+      "placeholderIconUrl": "/uploads/icon.png ou https://...",
+      "iconAlt": "Apercu de l'icone du logiciel",
+      "saving": "Enregistrement...",
+      "updatePackage": "Mettre a jour le paquet logiciel",
+      "createPackage": "Creer un paquet logiciel",
+      "labelSyncApiKey": "Sync API Key",
+      "syncApiKeyHint": "Ajoutez ceci comme secret GitHub Actions nomme {secretName} dans votre depot. L'action doit appeler :",
+      "copied": "Copie !",
+      "copy": "Copier",
+      "rotating": "Rotation...",
+      "regenerate": "Regenerer",
+      "labelLastSynced": "Derniere synchronisation",
+      "never": "Jamais",
+      "syncing": "Synchronisation...",
+      "syncNow": "Synchroniser maintenant",
+      "fetching": "Recuperation...",
+      "syncField": "Synchroniser {field}",
+      "syncSuccess": "Synchronisation terminee avec succes.",
+      "previewLabel": "Apercu : {field}",
+      "noContent": "Aucun contenu disponible.",
+      "screenshotAlt": "Apercu de la capture d'ecran",
+      "noScreenshots": "Aucune capture d'ecran trouvee.",
+      "applying": "Application...",
+      "apply": "Appliquer",
+      "dismiss": "Ignorer",
+      "appliedSuccess": "Applique avec succes.",
+      "fieldLabel": {
+        "readme": "README",
+        "changelog": "Changelog",
+        "screenshots": "Captures d'ecran"
+      }
+    },
+    "breadcrumbPreview": {
+      "cataloguePage": "Page catalogue :",
+      "detailPage": "Page detail :",
+      "defaultRoot": "Accueil",
+      "sampleCategory": "Backend",
+      "samplePackage": "LoopAI Core"
+    },
+    "breadcrumbConfig": {
+      "labelSeparator": "Separateur",
+      "hintSeparator": "Symbole affiche entre les elements du fil d'Ariane (ex. {slash}, {gt}, {rsaquo})",
+      "labelRootLabel": "Libelle racine",
+      "hintRootLabel": "Libelle du premier element (lien vers le slug racine)",
+      "labelRootUrl": "URL racine",
+      "labelShowCategory": "Afficher le fil de categorie",
+      "hintShowCategory": "Affiche la categorie entre la racine et le nom du paquet",
+      "labelMaxLabelLength": "Longueur maximale du libelle",
+      "hintMaxLabelLength": "Caracteres avant troncature avec \"...\"",
+      "labelCustomCss": "CSS personnalise",
+      "hintCustomCss": "Applique au conteneur du fil d'Ariane. Remplace les styles par defaut.",
+      "hintPreview": "L'apercu utilise les parametres actuels (non enregistres).",
+      "tabGeneral": "General",
+      "tabCss": "CSS",
+      "tabPreview": "Apercu",
+      "reset": "Reinitialiser",
+      "saving": "Enregistrement...",
+      "save": "Enregistrer",
+      "saved": "Enregistre.",
+      "saveFailed": "Echec de l'enregistrement"
+    },
+    "widgets": {
+      "title": "GHRM — Breadcrumb Widgets",
+      "loading": "Chargement des configurations de widgets...",
+      "loadFailed": "Impossible de charger les configurations de widgets",
+      "catalogueLabel": "Breadcrumb du catalogue",
+      "catalogueDesc": "Affiche en haut des pages de liste de categories et d'index.",
+      "detailLabel": "Breadcrumb de detail du paquet",
+      "detailDesc": "Affiche en haut de la page de detail du paquet logiciel."
+    }
+  }
+}

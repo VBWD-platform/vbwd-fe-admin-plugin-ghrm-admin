@@ -5,13 +5,13 @@
     </component>
 
     <p class="ghrm-breadcrumb-preview__label">
-      Catalogue page:
+      {{ $t('ghrm.breadcrumbPreview.cataloguePage') }}
     </p>
     <nav class="ghrm-breadcrumb">
       <a
         class="ghrm-breadcrumb__link"
         href="#"
-      >{{ truncate(config.root_name || 'Home') }}</a>
+      >{{ truncate(config.root_name || $t('ghrm.breadcrumbPreview.defaultRoot')) }}</a>
       <span
         v-if="config.show_category !== false"
         class="ghrm-breadcrumb__separator"
@@ -19,17 +19,17 @@
       <span
         v-if="config.show_category !== false"
         class="ghrm-breadcrumb__current"
-      >{{ truncate('Backend') }}</span>
+      >{{ truncate($t('ghrm.breadcrumbPreview.sampleCategory')) }}</span>
     </nav>
 
     <p class="ghrm-breadcrumb-preview__label ghrm-breadcrumb-preview__label--spaced">
-      Detail page:
+      {{ $t('ghrm.breadcrumbPreview.detailPage') }}
     </p>
     <nav class="ghrm-breadcrumb">
       <a
         class="ghrm-breadcrumb__link"
         href="#"
-      >{{ truncate(config.root_name || 'Home') }}</a>
+      >{{ truncate(config.root_name || $t('ghrm.breadcrumbPreview.defaultRoot')) }}</a>
       <span
         v-if="config.show_category !== false"
         class="ghrm-breadcrumb__separator"
@@ -38,9 +38,9 @@
         v-if="config.show_category !== false"
         class="ghrm-breadcrumb__link"
         href="#"
-      >{{ truncate('Backend') }}</a>
+      >{{ truncate($t('ghrm.breadcrumbPreview.sampleCategory')) }}</a>
       <span class="ghrm-breadcrumb__separator">{{ config.separator || '/' }}</span>
-      <span class="ghrm-breadcrumb__current">{{ truncate('LoopAI Core') }}</span>
+      <span class="ghrm-breadcrumb__current">{{ truncate($t('ghrm.breadcrumbPreview.samplePackage')) }}</span>
     </nav>
   </div>
 </template>

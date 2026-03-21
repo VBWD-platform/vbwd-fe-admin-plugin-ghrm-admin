@@ -1,0 +1,91 @@
+{
+  "ghrm": {
+    "nav": {
+      "software": "Software",
+      "widgets": "Widgets"
+    },
+    "softwareTab": {
+      "loading": "กำลังโหลดข้อมูลแพ็กเกจซอฟต์แวร์...",
+      "labelPackageName": "ชื่อที่แสดงของแพ็กเกจ *",
+      "placeholderPackageName": "เช่น My Analytics Tool",
+      "labelGithubOwner": "GitHub Owner *",
+      "placeholderGithubOwner": "เช่น myorg",
+      "labelGithubRepo": "GitHub Repo *",
+      "placeholderGithubRepo": "เช่น my-plugin",
+      "labelDescription": "คำอธิบาย",
+      "placeholderDescription": "คำอธิบายสั้นๆ ของแพ็กเกจซอฟต์แวร์",
+      "labelAuthor": "ผู้เขียน / ผู้ดูแล",
+      "placeholderAuthor": "ชื่อผู้เขียนหรือองค์กร",
+      "labelIconUrl": "URL ไอคอนซอฟต์แวร์",
+      "placeholderIconUrl": "/uploads/icon.png หรือ https://...",
+      "iconAlt": "ตัวอย่างไอคอนซอฟต์แวร์",
+      "saving": "กำลังบันทึก...",
+      "updatePackage": "อัปเดตแพ็กเกจซอฟต์แวร์",
+      "createPackage": "สร้างแพ็กเกจซอฟต์แวร์",
+      "labelSyncApiKey": "Sync API Key",
+      "syncApiKeyHint": "เพิ่มเป็น GitHub Actions secret ชื่อ {secretName} ในรีโพของคุณ Action ควรเรียก:",
+      "copied": "คัดลอกแล้ว!",
+      "copy": "คัดลอก",
+      "rotating": "กำลังหมุนเวียน...",
+      "regenerate": "สร้างใหม่",
+      "labelLastSynced": "ซิงค์ล่าสุด",
+      "never": "ไม่เคย",
+      "syncing": "กำลังซิงค์...",
+      "syncNow": "ซิงค์ตอนนี้",
+      "fetching": "กำลังดึงข้อมูล...",
+      "syncField": "ซิงค์ {field}",
+      "syncSuccess": "ซิงค์สำเร็จแล้ว",
+      "previewLabel": "ตัวอย่าง: {field}",
+      "noContent": "ไม่มีเนื้อหา",
+      "screenshotAlt": "ตัวอย่างภาพหน้าจอ",
+      "noScreenshots": "ไม่พบภาพหน้าจอ",
+      "applying": "กำลังใช้งาน...",
+      "apply": "ใช้งาน",
+      "dismiss": "ปิด",
+      "appliedSuccess": "ใช้งานสำเร็จแล้ว",
+      "fieldLabel": {
+        "readme": "README",
+        "changelog": "Changelog",
+        "screenshots": "ภาพหน้าจอ"
+      }
+    },
+    "breadcrumbPreview": {
+      "cataloguePage": "หน้าแคตตาล็อก:",
+      "detailPage": "หน้ารายละเอียด:",
+      "defaultRoot": "หน้าแรก",
+      "sampleCategory": "Backend",
+      "samplePackage": "LoopAI Core"
+    },
+    "breadcrumbConfig": {
+      "labelSeparator": "ตัวคั่น",
+      "hintSeparator": "สัญลักษณ์ที่แสดงระหว่างรายการ breadcrumb (เช่น {slash}, {gt}, {rsaquo})",
+      "labelRootLabel": "ป้ายรากของ",
+      "hintRootLabel": "ป้ายสำหรับ breadcrumb แรก (ลิงก์ไปยัง root slug)",
+      "labelRootUrl": "URL ราก",
+      "labelShowCategory": "แสดง breadcrumb หมวดหมู่",
+      "hintShowCategory": "แสดงหมวดหมู่ระหว่างรากและชื่อแพ็กเกจ",
+      "labelMaxLabelLength": "ความยาวป้ายสูงสุด",
+      "hintMaxLabelLength": "จำนวนอักขระก่อนตัดด้วย \"...\"",
+      "labelCustomCss": "CSS กำหนดเอง",
+      "hintCustomCss": "ใช้กับ wrapper ของ breadcrumb แทนที่สไตล์เริ่มต้น",
+      "hintPreview": "ตัวอย่างใช้การตั้งค่าปัจจุบัน (ยังไม่บันทึก)",
+      "tabGeneral": "ทั่วไป",
+      "tabCss": "CSS",
+      "tabPreview": "ตัวอย่าง",
+      "reset": "รีเซ็ต",
+      "saving": "กำลังบันทึก...",
+      "save": "บันทึก",
+      "saved": "บันทึกแล้ว",
+      "saveFailed": "บันทึกล้มเหลว"
+    },
+    "widgets": {
+      "title": "GHRM — Breadcrumb Widgets",
+      "loading": "กำลังโหลดการตั้งค่า widget...",
+      "loadFailed": "ไม่สามารถโหลดการตั้งค่า widget ได้",
+      "catalogueLabel": "Breadcrumb แคตตาล็อก",
+      "catalogueDesc": "แสดงที่ด้านบนของหน้ารายการหมวดหมู่และหน้าดัชนี",
+      "detailLabel": "Breadcrumb รายละเอียดแพ็กเกจ",
+      "detailDesc": "แสดงที่ด้านบนของหน้ารายละเอียดแพ็กเกจซอฟต์แวร์"
+    }
+  }
+}

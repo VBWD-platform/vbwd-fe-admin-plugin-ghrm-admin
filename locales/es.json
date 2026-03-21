@@ -1,0 +1,91 @@
+{
+  "ghrm": {
+    "nav": {
+      "software": "Software",
+      "widgets": "Widgets"
+    },
+    "softwareTab": {
+      "loading": "Cargando datos del paquete de software...",
+      "labelPackageName": "Nombre del paquete *",
+      "placeholderPackageName": "ej. Mi herramienta de analisis",
+      "labelGithubOwner": "GitHub Owner *",
+      "placeholderGithubOwner": "ej. myorg",
+      "labelGithubRepo": "GitHub Repo *",
+      "placeholderGithubRepo": "ej. my-plugin",
+      "labelDescription": "Descripcion",
+      "placeholderDescription": "Descripcion breve del paquete de software",
+      "labelAuthor": "Autor / Responsable",
+      "placeholderAuthor": "Nombre del autor u organizacion",
+      "labelIconUrl": "URL del icono del software",
+      "placeholderIconUrl": "/uploads/icon.png o https://...",
+      "iconAlt": "Vista previa del icono del software",
+      "saving": "Guardando...",
+      "updatePackage": "Actualizar paquete de software",
+      "createPackage": "Crear paquete de software",
+      "labelSyncApiKey": "Sync API Key",
+      "syncApiKeyHint": "Agregue esto como un secreto de GitHub Actions llamado {secretName} en su repositorio. La accion debe llamar:",
+      "copied": "Copiado!",
+      "copy": "Copiar",
+      "rotating": "Rotando...",
+      "regenerate": "Regenerar",
+      "labelLastSynced": "Ultima sincronizacion",
+      "never": "Nunca",
+      "syncing": "Sincronizando...",
+      "syncNow": "Sincronizar ahora",
+      "fetching": "Obteniendo...",
+      "syncField": "Sincronizar {field}",
+      "syncSuccess": "Sincronizacion completada exitosamente.",
+      "previewLabel": "Vista previa: {field}",
+      "noContent": "No hay contenido disponible.",
+      "screenshotAlt": "Vista previa de captura de pantalla",
+      "noScreenshots": "No se encontraron capturas de pantalla.",
+      "applying": "Aplicando...",
+      "apply": "Aplicar",
+      "dismiss": "Descartar",
+      "appliedSuccess": "Aplicado exitosamente.",
+      "fieldLabel": {
+        "readme": "README",
+        "changelog": "Changelog",
+        "screenshots": "Capturas de pantalla"
+      }
+    },
+    "breadcrumbPreview": {
+      "cataloguePage": "Pagina del catalogo:",
+      "detailPage": "Pagina de detalle:",
+      "defaultRoot": "Inicio",
+      "sampleCategory": "Backend",
+      "samplePackage": "LoopAI Core"
+    },
+    "breadcrumbConfig": {
+      "labelSeparator": "Separador",
+      "hintSeparator": "Simbolo mostrado entre elementos de breadcrumb (ej. {slash}, {gt}, {rsaquo})",
+      "labelRootLabel": "Etiqueta raiz",
+      "hintRootLabel": "Etiqueta para la primera miga (enlaza al slug raiz)",
+      "labelRootUrl": "URL raiz",
+      "labelShowCategory": "Mostrar miga de categoria",
+      "hintShowCategory": "Muestra la categoria entre la raiz y el nombre del paquete",
+      "labelMaxLabelLength": "Longitud maxima de etiqueta",
+      "hintMaxLabelLength": "Caracteres antes del truncamiento con \"...\"",
+      "labelCustomCss": "CSS personalizado",
+      "hintCustomCss": "Aplicado al contenedor del breadcrumb. Sobrescribe los estilos predeterminados.",
+      "hintPreview": "La vista previa usa la configuracion actual (no guardada).",
+      "tabGeneral": "General",
+      "tabCss": "CSS",
+      "tabPreview": "Vista previa",
+      "reset": "Restablecer",
+      "saving": "Guardando...",
+      "save": "Guardar",
+      "saved": "Guardado.",
+      "saveFailed": "Error al guardar"
+    },
+    "widgets": {
+      "title": "GHRM — Breadcrumb Widgets",
+      "loading": "Cargando configuraciones de widgets...",
+      "loadFailed": "No se pudieron cargar las configuraciones de widgets",
+      "catalogueLabel": "Breadcrumb del catalogo",
+      "catalogueDesc": "Se muestra en la parte superior de las paginas de lista de categorias e indice.",
+      "detailLabel": "Breadcrumb de detalle del paquete",
+      "detailDesc": "Se muestra en la parte superior de la pagina de detalle del paquete de software."
+    }
+  }
+}

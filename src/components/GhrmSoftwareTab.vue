@@ -4,7 +4,7 @@
       v-if="loading"
       class="ghrm-loading"
     >
-      Loading software package data...
+      {{ $t('ghrm.softwareTab.loading') }}
     </div>
 
     <div
@@ -17,12 +17,12 @@
     <template v-else>
       <!-- Display Name -->
       <div class="ghrm-field">
-        <label class="ghrm-label">Package Display Name *</label>
+        <label class="ghrm-label">{{ $t('ghrm.softwareTab.labelPackageName') }}</label>
         <input
           v-model="form.name"
           class="ghrm-input"
           type="text"
-          placeholder="e.g. My Analytics Tool"
+          :placeholder="$t('ghrm.softwareTab.placeholderPackageName')"
           data-testid="ghrm-name"
         >
       </div>
@@ -30,22 +30,22 @@
       <!-- GitHub Repo -->
       <div class="ghrm-field-row">
         <div class="ghrm-field">
-          <label class="ghrm-label">GitHub Owner *</label>
+          <label class="ghrm-label">{{ $t('ghrm.softwareTab.labelGithubOwner') }}</label>
           <input
             v-model="form.github_owner"
             class="ghrm-input"
             type="text"
-            placeholder="e.g. myorg"
+            :placeholder="$t('ghrm.softwareTab.placeholderGithubOwner')"
             data-testid="ghrm-github-owner"
           >
         </div>
         <div class="ghrm-field">
-          <label class="ghrm-label">GitHub Repo *</label>
+          <label class="ghrm-label">{{ $t('ghrm.softwareTab.labelGithubRepo') }}</label>
           <input
             v-model="form.github_repo"
             class="ghrm-input"
             type="text"
-            placeholder="e.g. my-plugin"
+            :placeholder="$t('ghrm.softwareTab.placeholderGithubRepo')"
             data-testid="ghrm-github-repo"
           >
         </div>
@@ -53,43 +53,43 @@
 
       <!-- Description -->
       <div class="ghrm-field">
-        <label class="ghrm-label">Description</label>
+        <label class="ghrm-label">{{ $t('ghrm.softwareTab.labelDescription') }}</label>
         <textarea
           v-model="form.description"
           class="ghrm-input ghrm-textarea"
           rows="3"
-          placeholder="Short description of the software package"
+          :placeholder="$t('ghrm.softwareTab.placeholderDescription')"
           data-testid="ghrm-description"
         />
       </div>
 
       <!-- Author -->
       <div class="ghrm-field">
-        <label class="ghrm-label">Author / Maintainer</label>
+        <label class="ghrm-label">{{ $t('ghrm.softwareTab.labelAuthor') }}</label>
         <input
           v-model="form.author_name"
           class="ghrm-input"
           type="text"
-          placeholder="Author or organisation name"
+          :placeholder="$t('ghrm.softwareTab.placeholderAuthor')"
           data-testid="ghrm-author-name"
         >
       </div>
 
       <!-- Icon URL -->
       <div class="ghrm-field">
-        <label class="ghrm-label">Software Icon URL</label>
+        <label class="ghrm-label">{{ $t('ghrm.softwareTab.labelIconUrl') }}</label>
         <input
           v-model="form.icon_url"
           class="ghrm-input"
           type="text"
-          placeholder="/uploads/icon.png or https://..."
+          :placeholder="$t('ghrm.softwareTab.placeholderIconUrl')"
           data-testid="ghrm-icon-url"
         >
         <img
           v-if="form.icon_url"
           :src="form.icon_url"
           class="ghrm-icon-preview"
-          alt="Software icon preview"
+          :alt="$t('ghrm.softwareTab.iconAlt')"
         >
       </div>
 
@@ -102,7 +102,7 @@
           data-testid="ghrm-save-btn"
           @click="save"
         >
-          {{ saving ? 'Saving...' : (pkg ? 'Update Software Package' : 'Create Software Package') }}
+          {{ saving ? $t('ghrm.softwareTab.saving') : (pkg ? $t('ghrm.softwareTab.updatePackage') : $t('ghrm.softwareTab.createPackage')) }}
         </button>
       </div>
 
@@ -111,10 +111,9 @@
         <div class="ghrm-divider" />
 
         <div class="ghrm-field">
-          <label class="ghrm-label">Sync API Key</label>
+          <label class="ghrm-label">{{ $t('ghrm.softwareTab.labelSyncApiKey') }}</label>
           <p class="ghrm-hint">
-            Add this as a GitHub Actions secret named <code>VBWD_SYNC_KEY</code> in your repo.
-            The action should call:
+            {{ $t('ghrm.softwareTab.syncApiKeyHint', { secretName: 'VBWD_SYNC_KEY' }) }}
             <code>curl "{{ apiBase }}/api/v1/ghrm/sync?package={{ pkg.slug }}&amp;key=$VBWD_SYNC_KEY"</code>
           </p>
           <div class="ghrm-key-row">
@@ -130,7 +129,7 @@
               data-testid="ghrm-copy-key-btn"
               @click="copyKey"
             >
-              {{ keyCopied ? 'Copied!' : 'Copy' }}
+              {{ keyCopied ? $t('ghrm.softwareTab.copied') : $t('ghrm.softwareTab.copy') }}
             </button>
             <button
               type="button"
@@ -139,14 +138,14 @@
               data-testid="ghrm-rotate-key-btn"
               @click="rotateKey"
             >
-              {{ rotatingKey ? 'Rotating...' : 'Regenerate' }}
+              {{ rotatingKey ? $t('ghrm.softwareTab.rotating') : $t('ghrm.softwareTab.regenerate') }}
             </button>
           </div>
         </div>
 
         <!-- Last synced + Sync Now + Partial Sync buttons -->
         <div class="ghrm-field">
-          <label class="ghrm-label">Last Synced</label>
+          <label class="ghrm-label">{{ $t('ghrm.softwareTab.labelLastSynced') }}</label>
           <div class="ghrm-sync-row">
             <span
               class="ghrm-sync-time"
@@ -161,7 +160,7 @@
               data-testid="ghrm-sync-now-btn"
               @click="syncNow"
             >
-              {{ syncing ? 'Syncing...' : 'Sync Now' }}
+              {{ syncing ? $t('ghrm.softwareTab.syncing') : $t('ghrm.softwareTab.syncNow') }}
             </button>
             <button
               v-for="field in partialSyncFields"
@@ -172,14 +171,14 @@
               :data-testid="`ghrm-sync-${field}-btn`"
               @click="fetchPreview(field)"
             >
-              {{ previewState[field].fetching ? 'Fetching...' : `Sync ${fieldLabel(field)}` }}
+              {{ previewState[field].fetching ? $t('ghrm.softwareTab.fetching') : $t('ghrm.softwareTab.syncField', { field: $t('ghrm.softwareTab.fieldLabel.' + field) }) }}
             </button>
           </div>
           <p
             v-if="syncSuccess"
             class="ghrm-success"
           >
-            Sync completed successfully.
+            {{ $t('ghrm.softwareTab.syncSuccess') }}
           </p>
           <p
             v-if="syncError"
@@ -199,7 +198,7 @@
               :data-testid="`ghrm-preview-panel-${field}`"
             >
               <div class="ghrm-preview-header">
-                <strong>Preview: {{ fieldLabel(field) }}</strong>
+                <strong>{{ $t('ghrm.softwareTab.previewLabel', { field: $t('ghrm.softwareTab.fieldLabel.' + field) }) }}</strong>
               </div>
 
               <!-- README / Changelog: raw markdown in <pre> -->
@@ -212,7 +211,7 @@
                   v-else
                   class="ghrm-hint"
                 >
-                  No content available.
+                  {{ $t('ghrm.softwareTab.noContent') }}
                 </p>
               </template>
 
@@ -227,14 +226,14 @@
                     :key="idx"
                     :src="url"
                     class="ghrm-preview-img"
-                    alt="Screenshot preview"
+                    :alt="$t('ghrm.softwareTab.screenshotAlt')"
                   >
                 </div>
                 <p
                   v-else
                   class="ghrm-hint"
                 >
-                  No screenshots found.
+                  {{ $t('ghrm.softwareTab.noScreenshots') }}
                 </p>
               </template>
 
@@ -246,7 +245,7 @@
                   :data-testid="`ghrm-apply-${field}-btn`"
                   @click="applyField(field)"
                 >
-                  {{ previewState[field].applying ? 'Applying...' : 'Apply' }}
+                  {{ previewState[field].applying ? $t('ghrm.softwareTab.applying') : $t('ghrm.softwareTab.apply') }}
                 </button>
                 <button
                   type="button"
@@ -254,13 +253,13 @@
                   :data-testid="`ghrm-dismiss-${field}-btn`"
                   @click="dismissPreview(field)"
                 >
-                  Dismiss
+                  {{ $t('ghrm.softwareTab.dismiss') }}
                 </button>
                 <span
                   v-if="previewState[field].applySuccess"
                   class="ghrm-success"
                 >
-                  Applied successfully.
+                  {{ $t('ghrm.softwareTab.appliedSuccess') }}
                 </span>
                 <span
                   v-if="previewState[field].applyError"
@@ -362,10 +361,6 @@ const previewState = ref<Record<PartialSyncField, FieldPreviewState>>({
   changelog: _makeFieldState(),
   screenshots: _makeFieldState(),
 });
-
-function fieldLabel(field: PartialSyncField): string {
-  return { readme: 'README', changelog: 'Changelog', screenshots: 'Screenshots' }[field];
-}
 
 const apiBase = computed(() => window.location.origin);
 
